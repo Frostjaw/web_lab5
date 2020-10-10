@@ -1,0 +1,24 @@
+﻿@model IEnumerable<lab5v2.Models.Hospital>
+@{
+    ViewData["Title"] = "Hospital";
+}
+
+<h2>Hospitals</h2>
+<a href="/Home/CreateHospital">Create new</a>
+<div style="margin-top:10px">
+    <div style="display: inline">Name</div>
+    <div style="padding-left: 100px; display: inline">Address</div>
+</div>
+
+@foreach (var hospital in Model)
+{
+<div style="margin-top:15px">
+    <div style="display: inline">@hospital.Name</div>
+    <div style="padding-left: 100px; display: inline">@hospital.Address</div>
+    <div style="position:absolute; left: 500px; display: inline">
+        <div style="display: inline; margin-left:5px"><a asp-action="UpdateHospital" asp-route-id="@hospital.Id">Update</a></div>
+        <div style="display: inline; margin-left:5px"><a asp-action="DetailsHospital" asp-route-id="@hospital.Id">Details</a></div>
+        <div style="display: inline; margin-left:5px"><form asp-action="DeleteHospital" method= "post" asp-route-id="@hospital.Id" style="display:inline"><button>Delete</button></form></div>
+    </div>
+</div>
+}

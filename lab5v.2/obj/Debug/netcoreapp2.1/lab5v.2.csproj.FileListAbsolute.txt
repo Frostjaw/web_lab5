@@ -1,0 +1,5 @@
+D:\Учеба\3 course\Web-технология\Лабы 2 сем\lab5v.2\lab5v.2\obj\Debug\netcoreapp2.1\lab5v.2.csproj.CoreCompileInputs.cache
+D:\Учеба\3 course\Web-технология\Лабы 2 сем\lab5v.2\lab5v.2\obj\Debug\netcoreapp2.1\lab5v.2.RazorAssemblyInfo.cache
+D:\Учеба\3 course\Web-технология\Лабы 2 сем\lab5v.2\lab5v.2\obj\Debug\netcoreapp2.1\lab5v.2.RazorAssemblyInfo.cs
+D:\Учеба\3 course\Web-технология\Лабы 2 сем\lab5v.2\lab5v.2\obj\Debug\netcoreapp2.1\lab5v.2.AssemblyInfoInputs.cache
+D:\Учеба\3 course\Web-технология\Лабы 2 сем\lab5v.2\lab5v.2\obj\Debug\netcoreapp2.1\lab5v.2.AssemblyInfo.cs

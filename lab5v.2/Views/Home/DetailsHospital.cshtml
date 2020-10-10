@@ -1,0 +1,16 @@
+﻿@model lab5v2.Models.Hospital
+@{
+    ViewData["Title"] = "DetailsHospital";
+}
+
+<h2>Details</h2>
+<div>
+    <div style="display:inline;font-weight:bold">Name</div>
+    <div style="display:inline;margin-left:20px">@Model.Name</div>
+</div>
+<div>
+    <div style="display:inline;font-weight:bold">Address</div>
+    <div style="display:inline;margin-left:20px">@Model.Address</div>
+</div>
+
+<a href="/Home/Hospitals">Back to list</a>

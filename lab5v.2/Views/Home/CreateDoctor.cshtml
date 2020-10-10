@@ -1,0 +1,40 @@
+﻿@model IEnumerable<lab5v2.Models.Hospital>
+@{
+    ViewData["Title"] = "CreateDoctor";
+}
+
+<h2>Create Doctor</h2>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Speciality</label>
+            <input type="text" name="speciality" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Hospital</label>
+            <select name="hospital_id" class="form-control">
+                @foreach (var hospital in Model)
+                {
+                    <option value="@hospital.Id">@hospital.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-default" name="submit" value="Create" />
+        </div>
+    </div>
+
+</form>
+
+<a href="/Home/Doctors">Back to list</a>

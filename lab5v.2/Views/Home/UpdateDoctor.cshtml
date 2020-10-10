@@ -1,0 +1,39 @@
+﻿@model lab5v2.Models.Doctor
+@{
+    ViewData["Title"] = "UpdateDoctor";
+}
+
+<h2>UpdateDoctor</h2>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Name</label>
+            <input type="text" name="name" value="@Model.Name" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Speciality</label>
+            <input type="text" name="speciality" value="@Model.Speciality" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <label>Hospital</label>
+            <select name="hospital_id" class="form-control">
+                @foreach (var hospital in Model.temp_hospitals)
+                {
+                    <option value="@hospital.Id">@hospital.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-default" name="submit" value="Update" />
+        </div>
+    </div>
+</form>
+
+<a href="/Home/Doctors">Back to list</a>
